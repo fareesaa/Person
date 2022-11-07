@@ -1,7 +1,5 @@
 package person
 
-import "fmt"
-
 type Person struct {
 	Id    int
 	Name  string
@@ -38,6 +36,10 @@ func (f Person) GetHobby() string {
 	return f.Hobby
 }
 
-func (f Person) ToString() {
-	fmt.Printf("Halo nama saya %s, hobi saya adalah %s", f.Name, f.Hobby)
+func (f Person) ToString() string {
+	return "Halo nama saya" + f.Name + ", hobi saya adalah " + f.Hobby
+}
+
+func RetPerson() Person {
+	return Person{}
 }
