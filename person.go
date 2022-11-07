@@ -1,4 +1,4 @@
-package golang
+package person
 
 import "fmt"
 
